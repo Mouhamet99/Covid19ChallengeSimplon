@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="css/style.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/undraw_secure_login_pdn4.svg" alt="" width="250" height="250">
+        </div>
+        <div class="menu-toogle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <nav>
+            <!-- <ul>
+                <li>
+                    <a href="./connexion.html" class="active">Acceuil</a>
+                </li>
+                <li>
+                    <a href="./Interactivequiz.html">Test Covid</a>
+                </li>
+                <li>
+                    <a href="./resultat.html">Resultat</a>
+                </li>
+            </ul> -->
+                
+        </nav>
+        <div class="clear-fix"></div>
+    </header>
+    <section class="connexion">
+        <div class="connexion-title">
+            <h1>Connexion</h1>
+        </div>
+        <div class="connexion-body">
+            <div class="connexion-body-left">
+
+            </div>
+            <form action="./Interactivequiz.html" class="connexion-body-right">
+                <div class="form-title">
+                    <h2>Bienvenue !</h2>
+                    <p>Connectez-vous !</p>
+                </div>
+                <div class="form-body">
+                    <label for="full-name">Nom & Prenom</label>
+                    <input type="text" name="fullName" id="full-name" placeholder="Saisissez votre nom complet">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Saisissez votre adresse email">
+                    <label for="password" >Password</label>
+                    <input type="password" name="password" id="password" placeholder="Saisisez votre password">
+                    <div class="other-option">
+                        <input type="checkbox" name="remind-me" id="remind-me">
+                        <label for="remind-me" >Se souvenir de moi <br> <a href="" id="forgeted-password">Mot de passe oublié</a></label>
+                    </div>
+                    <input type="submit" value="Envoyer" id="sign-in">
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="form-bottom">
+                    <p>Se connecter avec</p>
+                    <div class="social-media">
+                        <a href="" class="sm-icon">
+                            <img src="img/5296499_fb_facebook_facebook logo_icon.png" alt="">
+                        </a> 
+                        <a href="" class="sm-icon">
+                            <img src="img/294709_circle_twitter_icon.png" alt="">
+                        </a> 
+                        <a href="" class="sm-icon">
+                            <img src="img/2308064_account_google_logo_mail_plus_icon.png" alt="">
+                        </a> 
+                    </div>
+                    <p id="sign-up">Vous n'avez pas de compte ? <a href="" >Inscrivez-vous maintenant</a></p>
+                </div>
+            </form>
+            <br clear="both">
+        </div>
+    </section>
+    <script src="./js/connexion.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="css/style.css">
+    <title>Teste Covid 19</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/undraw_secure_login_pdn4.svg" alt="" width="250" height="250">
+        </div>
+        <div class="menu-toogle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./connexion.html">Acceuil</a>
+                </li>
+                <li>
+                    <a href="./Interactivequiz.html">Test Covid</a>
+                </li>
+                <li>
+                    <a href="./resultat.html" class="active">Resultat</a>
+                    </li>
+                </ul>
+        </nav>
+        <button type="button" id="sign-out">Deconnexion</button>
+        <div class="clear-fix"></div>
+    </header>
+    
+    <section id="section1">
+        <div class="result-illustration">
+            <img src="img/undraw_medical_research_qg4d.png" alt="" >
+        </div>
+        <div class="result-indication">
+            <p>Vos resultats</p>
+            <div class="result-icons">
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+            </div>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="section2">
+        <div class="user-result">
+            <div class="user-profil">
+                <img src="img/undraw_male_avatar_323b.svg" alt="" class="" width="200" height="200">
+                <div class="user-name">Seynabou Dione</div>
+                <div class="user-icons">
+                    <div class="icon-item">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="icon-item">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="user-result-test">
+                <p>Vous etes atteint de la covid 19</p>
+            </div>
+            <span> Pour plus d'informations, Veillez appelez au <a href="">800 00 50 50</a> ou au <a href="">15 15</a></span>
+        </div>
+    </section>
+    <script src="./js/result.js"></script>
+</body>
+</html>
