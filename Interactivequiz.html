@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resultat test Covid 19</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/undraw_secure_login_pdn4.svg" alt="" width="250" height="250">
+        </div>
+        <div class="menu-toogle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <nav>
+            <ul>
+                <ul>
+                    <li>
+                        <a href="./connexion.html" class>Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="./Interactivequiz" class="active">Test Covid</a>
+                    </li>
+                </ul>
+                
+            </ul>
+        </nav>
+        <div class="clear-fix"></div>
+        <button type="button" id="sign-out">Deconnexion</button>
+        <div class="clear-fix"></div>
+    </header>
+    <!-- Sommaire des questions -->
+    <div class="summary">
+        <div class="summary-item">
+            <div class="content active">
+                <span class="number">1</span>
+                <br cleat="both">
+                <p>Temperature</p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="content">
+                <span class="number">2</span>
+                <br cleat="both">
+                <p>Respiration.</p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="content">
+                <span class="number">3</span>
+                <br cleat="both">
+                <p>Fatigue </p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="content">
+                <sapn class="number">4</sapn>
+                <br cleat="both">
+                <p>Maux de gorge</p>
+            </div>
+        </div>
+        <div class="summary-item">
+            <div class="content">
+                <span class="number">5</span>
+                <br cleat="both">
+                <p>Maux de tête</p>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <form action="" autocomplete="off">
+
+    <!-- Presentation et Bienvenue-->
+    <div class="questions active ">
+        <h2> <span>Welcome</span></h2>
+        <img src="/img/robot.png" class="round" alt="Image du bot" width="250" height="250px">
+        <p class="question-text">Salut, je suis <strong>M.Bot</strong> . Je vais vous poser quelques questions. J'utiliserai vos réponses pour vous donner des conseils sur le niveau de soins médicaux que vous devriez rechercher. Si vous répondez au nom de quelqu'un d'autre, veuillez répondre à toutes les questions comme si vous étiez lui. Si vous devez recommencer, actualisez la page et recommencez. Si vous vivez une situation d'urgence mettant votre vie en danger, veuillez appeler le 1515 immédiatement. </p>
+
+    </div>
+    <!-- Termes et services -->
+    <div class="questions ">
+        <h2> <span>Note</span></h2>
+        <p class="question-text">L'objectif de l'auto-contrôle du coronavirus est de vous aider à prendre des décisions concernant la recherche de soins médicaux appropriés. Ce système n'est pas destiné au diagnostic ou au traitement de maladies, y compris COVID-19. Ce projet a été rendu possible grâce à un partenariat avec la Fondation CDC et est activé par la plateforme Azure de Microsoft. </p>
+        <div class="answer ">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="termes-et-services" id="daccord" value="daccord" >
+                    <label for="daccord">Je suis d'accord
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="termes-et-services" id="pas-daccord" value="pas-daccord" >
+                    <label for="pas-daccord">Je ne suis pas d'accord
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vacciné ou pas -->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Êtes-vous complètement vacciné contre le COVID-19 ? (Vous êtes considéré comme complètement vacciné 2 semaines après votre deuxième dose dans une série à deux injections comme les vaccins Pfizer ou Moderna, ou 2 semaines après un vaccin à dose unique comme le vaccin Janssen (Johnson & Johnson).)</p>
+        <div class="answer ">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="vaccin" id="vaccined" value="vaccined">
+                    <label for="vaccined">OUI</label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="vaccin" id="not-vaccined" value="notvaccined">
+                    <label for="not-vaccined">NON
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Age -->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Quel âge avez-vous ?</p>
+
+        <div class="answer  orange-style">
+            <select name="user-age" id="user-age">
+                <option value="" selected>Selectionnez votre tranche d'âge</option>
+                <option value="moins18">moins de 18 ans</option>
+                <option value="18-35"> entre 18 et 35ans</option>
+                <option value="plus35">plus de 35ans</option>
+            </select>
+        </div>
+    </div>
+    <!-- Temperature -->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Votre Temperature</p>
+        <div class="answer  orange-style">
+            <div class="answer-choice">
+                <input type="radio" name="temperature" id="dessous36" value="10">
+                <label for="dessous36">En dessous de 36°
+                </label>
+            </div>
+            <div class="answer-choice">
+                <input type="radio" name="temperature" id="normal" value="0">
+                <label for="normal">Entre 36° et 38°
+                </label>
+            </div>
+            <div class="answer-choice">
+                <input type="radio" name="temperature" id="deça38" value="10">
+                <label for="deça36">En deça de 38
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- Fievre
+    Pression Thoracique
+    Difficulte respiratoire
+    Trouble elocution
+    Inconscience 
+    Hypotension
+    Deshydratation -->
+    <!-- symptômes 1: Pression Thoracique-->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme : 
+             Peau, lèvres ou lits d'ongles pâles, gris ou bleus, selon le teint de la peau Douleur ou pression thoracique intense et constante 
+        </p>
+        <div class="answer">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="pression-thoracique" id="oui" value="10">
+                    <label for="oui">OUI
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="pression-thoracique" id="non" value="0">
+                    <label for="non">NON
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- symptômes 2: Difficulte respiratoire-->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme :  <br>Difficulté à respirer respiration sifflante, narines gonflées, grognements, ou côtes ou estomac qui bougent profondément et rapidement pendant que vous respirez)</p>
+        <div class="answer">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="difficulte-respiratoire" id="respiration-not-ok" value="30" >
+                    <label for="respiration-not-ok">OUI</label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="difficulte-respiratoire" id="respiration-ok" value="0" >
+                    <label for="respiration-ok">NON</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- symptômes 3 : Trouble elocution-->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme :  <br>Troubles de l'élocution ou difficulté à parler (nouvelles ou aggravées) </p>
+        <div class="answer">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="troubleElocution" id="elocution-not-ok" value="10">
+                    <label for="elocution-not-ok">OUI
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="troubleElocution" id="elocution-ok" value="0">
+                    <label for="elocution-ok">NON
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- symptome 4:Inconscience -->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme :  <br>Nouvelle désorientation (agit de manière confuse) Inconscience ou très difficile à réveiller </p>
+        <div class="answer ">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="inconscience" id="inconscience" value="10">
+                    <label for="inconscience">OUI
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="inconscience" id="conscience" value="0">
+                    <label for="conscience">NON
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- symptômes 5: Signe Hypotension-->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme :  <br>Crises nouvelles ou qui s'aggravent Signes d'hypotension (trop faible pour se tenir debout, étourdissements, étourdissements, sensation de froid, peau pâle et moite) </p>
+        <div class="answer ">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="hypotension" id="hypotension-ok" value="20">
+                    <label for="hypotension-ok">OUI
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="hypotension" id="hypotension-not-ok" value="0">
+                    <label for="hypotension-not-ok">NON
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- symptômes 6: Deshydratation-->
+    <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Avez-vous ce symptôme :  <br>Déshydratation (lèvres et bouche sèches, pas beaucoup d'urine, yeux enfoncés)</p>
+        <div class="answer ">
+            <div class="btn-response">
+                <div class="btn-response-item">
+                    <input type="radio" name="deshydratation" id="deshydratation-ok" value="10">
+                    <label for="deshydratation-ok">OUI
+                    </label>
+                </div>
+                <div class="btn-response-item">
+                    <input type="radio" name="deshydratation" id="hydratation" value="0">
+                    <label for="hydratation">NON
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="questions">
+        <h1>Question <span>1</span></h1>
+        <p class="question-text">Le CDC recommande ces étapes pour réduire votre risque de contracter et de propager COVID-19 : Obtenez un vaccin COVID-19 dès que possible lorsque vous êtes éligible. Les personnes de 12 ans et plus sont actuellement admissibles. Continuez à suivre les étapes ci-dessous tous les jours jusqu'à ce que vous soyez complètement vacciné.* Portez un masque sur le nez et la bouche.* Restez à au moins 6 pieds des personnes qui ne vivent pas avec vous.* Évitez les zones surpeuplées et les espaces mal ventilés. * Lavez-vous souvent les mains à l'eau et au savon ou utilisez un désinfectant pour les mains contenant au moins 60 % d'alcool.</p>
+        <div class="answer orange-style w-70">
+            <input type="text" name="" id="">
+        </div>
+    </div> -->
+    <div class="btn">
+        <!-- <span id="next">Suivant</span>
+        <span id="page-number">1/26</span> -->
+        <button type="button" id="next">Suivant</button>
+        <button type="button" id="page-number">1/26</button>
+    </div>
+
+    </form>
+    
+    <script src="./js/quiz.js"></script>
+</body>
+</html>
